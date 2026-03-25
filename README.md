@@ -1,16 +1,16 @@
-# 🎙️ ASR Test - Speech-to-Text + Diarization + Translation
+# ASR Test - Speech-to-Text + Diarization + Translation
 
 A powerful Automatic Speech Recognition (ASR) pipeline built with **WhisperX**, supporting:
 
-- 🎧 Speech-to-text (Vietnamese → English)
-- 👥 Speaker diarization (no token required)
-- ✨ Grammar & spelling correction (optional via Gemini)
-- 🌐 Translation (free, using Google Translate)
-- 📝 Export subtitles (SRT, VTT) + text + JSON
+- Speech-to-text (Vietnamese → English)
+- Speaker diarization (no token required)
+- Grammar & spelling correction (optional via Gemini)
+- Translation (free, using Google Translate)
+- Export subtitles (SRT, VTT) + text + JSON
 
 ---
 
-## 🚀 Features
+## Features
 
 - Accurate transcription using WhisperX (`large-v3`)
 - Automatic speaker detection via clustering (no API token)
@@ -21,7 +21,7 @@ A powerful Automatic Speech Recognition (ASR) pipeline built with **WhisperX**, 
 
 ---
 
-## 📦 Installation
+## Installation
 
 ### 1. Install PyTorch (CUDA 12.8)
 ```bash
@@ -44,7 +44,7 @@ Download: [https://ffmpeg.org/](https://ffmpeg.org/)
 
 ---
 
-## ⚙️ Usage
+## Usage
 
 ### Basic command
 
@@ -66,7 +66,7 @@ python new.py \
 
 ---
 
-## 🧠 Optional: Gemini Correction
+## Optional: Gemini Correction
 
 Add your API key to enable grammar correction:
 
@@ -80,7 +80,7 @@ If not provided:
 
 ---
 
-## 👥 Speaker Diarization
+## Speaker Diarization
 
 Enable with:
 
@@ -100,7 +100,7 @@ If not set:
 
 ---
 
-## 🌐 Language Settings
+## Language Settings
 
 Inside code:
 
@@ -111,7 +111,7 @@ OUTPUT_LANG = "en"
 
 ---
 
-## 📂 Output Files
+## Output Files
 
 All outputs are saved in `--out_dir`:
 
@@ -137,7 +137,7 @@ All outputs are saved in `--out_dir`:
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 * Requires GPU for best performance (`cuda`)
 * CPU mode supported but slower
@@ -147,7 +147,7 @@ All outputs are saved in `--out_dir`:
 
 ---
 
-## 🛠️ Pipeline Overview
+## Pipeline Overview
 
 ```
 Audio → FFmpeg → WhisperX → Alignment
@@ -157,7 +157,7 @@ Audio → FFmpeg → WhisperX → Alignment
 
 ---
 
-## 💡 Example
+## Example
 
 ```bash
 python new.py \
@@ -169,7 +169,7 @@ python new.py \
 
 ---
 
-## 📌 TODO
+## TODO
 
 * Replace clustering diarization with pyannote
 * Add real-time streaming
