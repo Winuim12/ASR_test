@@ -126,7 +126,7 @@ All outputs are saved in `--out_dir`:
 
 ---
 
-## 📝 Subtitle Format Example
+## Subtitle Format Example
 
 ```
 1
